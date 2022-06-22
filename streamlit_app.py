@@ -30,6 +30,5 @@ streamlit.text(fruityvice_response.json())
 
 # takes json response and makes it user-friendly 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-streamlit.text(fruityvice_normalized)
 # make into table
 streamlit.dataframe(fruityvice_normalized)
